@@ -1,12 +1,13 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Todo-App
+            {props.title}
           </a>
           <button
             className="navbar-toggler"
